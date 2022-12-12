@@ -8,6 +8,7 @@
     <title>410WEB</title>
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/media.css" rel="stylesheet" type="text/css">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,7 @@
                 <p class="header__content-tel">+7 (919) 448-17-23</p>
             </div>
             <div class="header__content-popup">
-                <a class="header__content-popup-link" href="#">Оставить заявку</a>
+                <a class="header__content-popup-link" href="#">Оставить заявку<img class="popup-arrow" src="img/popup-arrow.svg" alt="arrow"></a>
             </div>
             <button class="burger__menu btn-reset">
                 <span class="burger__line"></span>
@@ -36,6 +37,7 @@
     <main class="main">
         <section class="hero">
             <div class="container">
+                <img class="hero-bg" src="img/hero-bg.png" alt="bg">
                 <h1 class="hero-title">Делаем продающие сайты <span class="blue-text">с конверсией до 46%</span></h1>
                 <div class="hero__text-items">
                     <div class="hero__text-item">
@@ -67,7 +69,8 @@
             <div class="container">
                 <h1 class="feature-title">Правильно разработанный лендинг способен увеличить ваши продажи <span
                         class="blue-text">в 2-3 раза</span> за ближайшие <span class="blue-text">3 месяца</span></h1>
-                <div class="columns feature__items">
+                <div class="columns feature__items feature__items-up">
+
                     <div class="column item-full">
                         <div class="feature__item feature__item-full">
                             <h3 class="feature__item-title">Закройте вопрос привлечения клиентов на ближайшие 2 года
@@ -77,21 +80,25 @@
                                 и компаний </p>
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="feature__item feature__item-half-one">
-                            <h3 class="feature__item-title">Лендинг - универсальная посадочная страница</h3>
-                            <p class="feature__item-descr">Решение, которое подходит под любые цели, связки и источники
-                                трафика</p>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="feature__item feature__item-half-two">
-                            <h3 class="feature__item-title">Стабильный источник продвижения</h3>
-                            <p class="feature__item-descr">Платформа, позволяющая выстроить автоматическую связь между
-                                товаром и клиентом </p>
-                        </div>
-                    </div>
                 </div>
+                    <div class="columns feature__items feature__items-down">
+                        <div class="column">
+                            <div class="feature__item feature__item-half-one">
+                                <h3 class="feature__item-title">Лендинг - универсальная посадочная страница</h3>
+                                <p class="feature__item-descr">Решение, которое подходит под любые цели, связки и источники
+                                    трафика</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="feature__item feature__item-half-two">
+                                <h3 class="feature__item-title">Стабильный источник продвижения</h3>
+                                <p class="feature__item-descr">Платформа, позволяющая выстроить автоматическую связь между
+                                    товаром и клиентом </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                
             </div>
         </section>
         <section class="facts">
@@ -170,48 +177,52 @@
                     <p class="stage__text-descr">Над каждым этапом разработки работает отдельный специалист, что
                         обеспечивает максимальную эффективность в работе</p>
                 </div>
-                <div class="columns stage__items-left">
-                    <div class="stage__items-left">
+                <div class="stage__items-wrapper">
+                    <div class="columns stage__items-left">
                         <div class="column">
-                            <div class="stage__item">
+                            <div class="stage__item stage__item-one">
+
                                 <span class="blue-text stage__item-num">01</span>
                                 <h3 class="stage__item-descr">Брифинг клиента</h3>
                             </div>
                         </div>
                         <div class="column">
-                            <div class="stage__item">
-                                <span class="blue-text stage__item-num">01</span>
-                                <h3 class="stage__item-descr">Брифинг клиента</h3>
+                            <div class="stage__item stage__item-three">
+                                <span class="blue-text stage__item-num">03</span>
+                                <h3 class="stage__item-descr">Отрисовка дизайна</h3>
                             </div>
                         </div>
                         <div class="column">
-                            <div class="stage__item">
-                                <span class="blue-text stage__item-num">01</span>
-                                <h3 class="stage__item-descr">Брифинг клиента</h3>
+                            <div class="stage__item stage__item-five">
+                                <span class="blue-text stage__item-num">05</span>
+                                <h3 class="stage__item-descr">Презентация и доработки</h3>
                             </div>
                         </div>
+                        
+                        
                     </div>
-                    <div class="stage__items-right">
+                    <div class="columns stage__items-right">
                         <div class="column">
-                            <div class="stage__item">
-                                <span class="blue-text stage__item-num">01</span>
-                                <h3 class="stage__item-descr">Брифинг клиента</h3>
+                            <div class="stage__item stage__item-two">
+                                <span class="blue-text stage__item-num">02</span>
+                                <h3 class="stage__item-descr">Разработка структуры сайта</h3>
                             </div>
                         </div>
                         <div class="column">
-                            <div class="stage__item">
-                                <span class="blue-text stage__item-num">01</span>
-                                <h3 class="stage__item-descr">Брифинг клиента</h3>
+                            <div class="stage__item stage__item-four">
+                                <span class="blue-text stage__item-num">04</span>
+                                <h3 class="stage__item-descr">Верстка и интеграции</h3>
                             </div>
                         </div>
                         <div class="column">
-                            <div class="stage__item">
-                                <span class="blue-text stage__item-num">01</span>
-                                <h3 class="stage__item-descr">Брифинг клиента</h3>
+                            <div class="stage__item stage__item-six">
+                                <span class="blue-text stage__item-num">06</span>
+                                <h3 class="stage__item-descr">Запуск проекта</h3>
                             </div>
                         </div>
-                    </div>
+                    </div>    
                 </div>
+                
             </div>
         </section>
         <section class="project">
@@ -299,36 +310,39 @@
         <section class="tarif">
             <div class="container">
                 <h1 class="tarif-title">Выберите подходящее для вас решение</h1>
-                <div class="columns tarif__items">
-                    <div class="column">
+                <div class="tarif__items">
+                    <div class="tarif__item tarif__item-u">
                         <div class="tarif__item-platinum">
+                            <img class="tarif__item-platinum-img" src="img/tarif-platinum.png" alt="Donut">
                             <div class="tarif__item-up">
                                 <h2 class="tarif__item-up-title">Платинум</h2>
                                 <p class="tarif__item-up-descr">Полноценный лендинг "под ключ", готовый принимать
                                     продажи</p>
+                                <img class="tarif__item-up-arrow" src="img/arrow-white.svg" alt="arrow">
                             </div>
+                            
                             <div class="tarif__item__included-text">
                                 <div class="tarif__item__included-left">
-                                    <div class="tarif__item__included">
+                                    <div class="tarif__item__included-l">
                                         <div class="tarif__item__included-item">
                                             <span class="tarif__item__included-line"></span>
                                             <p class="tarif__item__included-descr">Уникальный дизайн</p>
                                         </div>
                                     </div>
-                                    <div class="tarif__item__included">
+                                    <div class="tarif__item__included-l">
                                         <div class="tarif__item__included-item">
                                             <span class="tarif__item__included-line"></span>
                                             <p class="tarif__item__included-descr">Тексты от копирайтера</p>
                                         </div>
                                     </div>
-                                    <div class="tarif__item__included">
+                                    <div class="tarif__item__included-l">
                                         <div class="tarif__item__included-item">
                                             <span class="tarif__item__included-line"></span>
                                             <p class="tarif__item__included-descr">Интеграция с почтой, crm и
                                                 мессенджерами</p>
                                         </div>
                                     </div>
-                                    <div class="tarif__item__included">
+                                    <div class="tarif__item__included-l">
                                         <div class="tarif__item__included-item">
                                             <span class="tarif__item__included-line"></span>
                                             <p class="tarif__item__included-descr">Встроенные системы аналитики</p>
@@ -337,20 +351,20 @@
                                 </div>
 
                                 <div class="tarif__item__included-right">
-                                    <div class="tarif__item__included">
+                                    <div class="tarif__item__included-r">
                                         <div class="tarif__item__included-item">
                                             <span class="tarif__item__included-line"></span>
                                             <p class="tarif__item__included-descr">Сервисы для увеличения конверсии</p>
                                         </div>
                                     </div>
-                                    <div class="tarif__item__included">
+                                    <div class="tarif__item__included-r">
                                         <div class="tarif__item__included-item">
                                             <span class="tarif__item__included-line"></span>
                                             <p class="tarif__item__included-descr">Поддержка и доработка в течение
                                                 месяца</p>
                                         </div>
                                     </div>
-                                    <div class="tarif__item__included">
+                                    <div class="tarif__item__included-r">
                                         <div class="tarif__item__included-item">
                                             <span class="tarif__item__included-line"></span>
                                             <p class="tarif__item__included-descr">Разработка от ведущего маркетолога и
@@ -359,43 +373,211 @@
                                     </div>
                                 </div>
                             </div>
-                            <span class="tarif__item-price"></span>
-                        </div>
-                    </div>
-                    <div class="tarif__item">
-                        <h2 class="tarif__item-title"></h2>
-                        <p class="tarif__item-descr"></p>
-                        <div class="tarif__item__included">
-                            <div class="tarif__item__included-item">
-                                <span class="tarif__item__included-line"></span>
-                                <p class="tarif__item__included-descr"></p>
+                            <div class="tarif__item-price">
+                                <span>от 78.000 ₽</span>
                             </div>
                         </div>
-
-                        <span class="tarif__item-price"></span>
+                        <div class="tarif__item-text">
+                            <div class="tarif__item-slider" data-duplicated="true" data-direction="right">
+                                <div class="tarif__item-text-l">
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                </div>
+                                <div class="tarif__item-text-l">
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                </div>
+                                <div class="tarif__item-text-l">
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                </div>
+                                <div class="tarif__item-text-l">
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                </div>
+                                <div class="tarif__item-text-l">
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                    <a class="tarif__item-text-link" href="#">Оставить заявку<img class="tarif__item-text-arrow" src="img/arrow-orange.svg"></a>
+                                </div>
+                            </div>                    
+                        </div>
                     </div>
-                    <div class="tarif__item">
-                        <h2 class="tarif__item-title"></h2>
-                        <p class="tarif__item-descr"></p>
-                        <div class="tarif__item__included">
-                            <div class="tarif__item__included-item">
-                                <span class="tarif__item__included-line"></span>
-                                <p class="tarif__item__included-descr"></p>
+                    <div class="tarif__item-down">
+                        <div class="tarif__item">
+                            <div class="tarif__item__business">
+                                <div class="tarif__item__business-up">
+                                    <div class="tarif__item__business-up-text">
+                                        <h2 class="tarif__item__business-up-title">бизнес</h2>
+                                        <p class="tarif__item__business-up-descr">Продвинутое решение с индивидуальным дизайном</p>
+                                    </div>
+                                    <img class="tarif__item__business-up-arrow" src="img/arrow-white.svg" alt="arrow">
+                                </div>
+                                <div class="tarif__item__business__included-text">
+                                    <div class="tarif__item__business__included-left">
+                                        <div class="tarif__item__business__included-l">
+                                            <div class="tarif__item__business__included-item">
+                                                <span class="tarif__item__business__included-line"></span>
+                                                <p class="tarif__item__business__included-descr">Уникальный дизайн</p>
+                                            </div>
+                                        </div>
+                                        <div class="tarif__item__business__included-l">
+                                            <div class="tarif__item__business__included-item">
+                                                <span class="tarif__item__business__included-line"></span>
+                                                <p class="tarif__item__business__included-descr">Интеграция с почтой, crm и мессенджерами</p>
+                                            </div>
+                                        </div>
+                                        <div class="tarif__item__business__included-l">
+                                            <div class="tarif__item__business__included-item">
+                                                <span class="tarif__item__business__included-line"></span>
+                                                <p class="tarif__item__business__included-descr">Сервисы для увеличения конверсии</p>
+                                            </div>
+                                        </div>
+                                        <div class="tarif__item__business__included-l">
+                                            <div class="tarif__item__business__included-item">
+                                                <span class="tarif__item__business__included-line"></span>
+                                                <p class="tarif__item__business__included-descr">Тексты от копирайтера</p>
+                                            </div>
+                                        </div>
+                                        <div class="tarif__item__business__included-l">
+                                            <div class="tarif__item__business__included-item">
+                                                <span class="tarif__item__business__included-line"></span>
+                                                <p class="tarif__item__business__included-descr">Встроенные системы аналитики</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tarif__item__business-price">
+                                    <span>от 60.000 ₽</span>
+                                </div>
+                                <div class="tarif__item__business__text">
+                                    <div class="tarif__item__business-slider" data-duplicated="true" data-direction="right">
+                                        <div class="tarif__item__business__text-l">
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                        </div>
+                                        <div class="tarif__item__business__text-l">
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                        </div>
+                                        <div class="tarif__item__business__text-l">
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                        </div>
+                                        <div class="tarif__item__business__text-l">
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                        </div>
+                                        <div class="tarif__item__business__text-l">
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__business__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                        </div>
+                                    </div>                    
+                                </div>
                             </div>
                         </div>
-
-                        <span class="tarif__item-price"></span>
+                        <div class="tarif__item">
+                            <div class="tarif__item__start">
+                                <div class="tarif__item__start-up">
+                                    <div class="tarif__item__start-up-text">
+                                        <h2 class="tarif__item__start-up-title">Старт</h2>
+                                        <p class="tarif__item__start-up-descr">Простое решение с типовым дизайном для небольших бюджетов</p>
+                                    </div>
+                                    <img class="tarif__item__start-up-arrow" src="img/arrow-white.svg" alt="arrow">
+                                </div>
+                                <div class="tarif__item__start__included-text">
+                                    <div class="tarif__item__start__included-left">
+                                        <div class="tarif__item__start__included-l">
+                                            <div class="tarif__item__start__included-item">
+                                                <span class="tarif__item__start__included-line"></span>
+                                                <p class="tarif__item__start__included-descr">Типовой дизайн</p>
+                                            </div>
+                                        </div>
+                                        <div class="tarif__item__start__included-l">
+                                            <div class="tarif__item__start__included-item">
+                                                <span class="tarif__item__start__included-line"></span>
+                                                <p class="tarif__item__start__included-descr">Универсальные тексты</p>
+                                            </div>
+                                        </div>
+                                        <div class="tarif__item__start__included-l">
+                                            <div class="tarif__item__start__included-item">
+                                                <span class="tarif__item__start__included-line"></span>
+                                                <p class="tarif__item__start__included-descr">Интеграция с почтой</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tarif__item__start-price">
+                                    <span>от 39.000 ₽</span>
+                                </div>
+                                <div class="tarif__item__start__text">
+                                    <div class="tarif__item__start-slider" data-duplicated="true" data-direction="right">
+                                        <div class="tarif__item__start__text-l">
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                        </div>
+                                        <div class="tarif__item__start__text-l">
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                        </div>
+                                        <div class="tarif__item__start__text-l">
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                        </div>
+                                        <div class="tarif__item__start__text-l">
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                        </div>
+                                        <div class="tarif__item__start__text-l">
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                            <a class="tarif__item__start__text-link" href="#">Оставить заявку<img src="img/arrow-white.svg"></a>
+                                        </div>
+                                    </div>                    
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
         <section class="manager">
             <div class="container">
-                <h1 class="manager-title">После старта работы мы закрепим за вами персонального менеджера</h1>
+                <img class="manager-bg" src="img/manager-bg.png" alt="bg">
+                <h1 class="manager-title"><span class="blue-text">После старта работы</span> мы закрепим за вами персонального менеджера</h1>
                 <div class="manager__text">
                     <img class="manager__text-img" src="img/quotes.svg" alt="quotes">
-                    <p class="manager__text-descr">Меня зовут Егор, я гарантирую вам постоянную коммуникацию в период
-                        реализации проекта, еженедельную отчетность и учет всех ваших интересов и пожеланий</p>
+                    <p class="manager__text-descr">Меня зовут Егор, я <span class="blue-text">гарантирую</span> вам постоянную коммуникацию в период
+                        реализации проекта, <span class="blue-text">еженедельную отчетность</span> и <span class="blue-text">учет всех ваших интересов</span> и пожеланий</p>
                 </div>
                 <div class="manager__button">
                     <div class="manager__button-left">
@@ -415,34 +597,41 @@
         </section>
         <section class="calmness">
             <div class="container">
-                <h1 class="calmness-title">Вы будете спокойны за каждый рубль</h1>
-                <div class="calmness__content">
-                    <div class="calmness__content-left">
-                        <div class="calmness__items">
-                            <div class="calmness__item">
-                                <img class="calmness__item-img" src="img/calmness1.png">
-                                <div class="calmness__item-text">
-                                    <h2 class="calmness__item-title">Регулярные отчеты раз в неделю</h2>
-                                    <p class="calmness__item-descr">по срокам, процессам, реализованным этапам</p>
+                <h1 class="calmness-title">Вы будете спокойны за <span class="blue-text">каждый рубль</span></h1>
+                <div class="calmness__wrapper">
+                    <div class="calmness__left">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="calmness__left-item">
+                                    <img class="calmness__left-item-img" src="img/calmness1.png">
+                                    <div class="calmness__left-item-text">
+                                        <h3 class="calmness__left-item-text-title"><span class="blue-text">Регулярные отчеты</span> раз в неделю</h3>
+                                        <p class="calmness__left-item-text-descr">по срокам, процессам, реализованным этапам</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="calmness__item">
-                                <img class="calmness__item-img" src="img/calmness2.png">
-                                <div class="calmness__item-text">
-                                    <h2 class="calmness__item-title">Все зафиксировано в договоре</h2>
-                                    <p class="calmness__item-descr">Работаем официально с оплатой по счету.
-                                        В договоре прописываем каждый этап, сроки и результат</p>
+                            <div class="column">
+                                <div class="calmness__left-item">
+                                    <img class="calmness__left-item-img" src="img/calmness2.png">
+                                    <div class="calmness__left-item-text">
+                                        <h3 class="calmness__left-item-text-title">Все зафиксировано в <span class="blue-text">договоре</span></h3>
+                                        <p class="calmness__left-item-text-descr">Работаем официально с оплатой по счету. 
+                                            В договоре прописываем каждый этап, сроки и результат</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="calmness__content-right">
-                        <div class="calmness__item">
-                            <img class="calmness__item-img" src="img/calmness3.png">
-                            <div class="calmness__item-text">
-                                <h2 class="calmness__item-title">Платите по удобному графику</h2>
-                                <p class="calmness__item-descr">Зачастую мы разделяем сумму на несколько выплат по ходу
-                                    работ</p>
+                    <div class="calmness__right">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="calmness__right-item">
+                                    <img class="calmness__right-item-img" src="img/calmness3.png">
+                                    <div class="calmness__right-item-text">
+                                        <h3 class="calmness__right-item-text-title">Платите по <span class="blue-text">удобному графику</span></h3>
+                                        <p class="calmness__right-item-text-descr">Зачастую мы разделяем сумму на несколько выплат по ходу работ</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -458,12 +647,13 @@
                 <h1 class="audit-title">Бесплатный аудит вашего сайта</h1>
                 <form class="audit__form" action="" method="post">
                     <div class="audit__form-left">
-                        <h3 class="audit__form-title">Оставьте заявку</h3>
-                        <input class="audit__form-input" type="text" name="name" placeholder="Имя">
-                        <input class="audit__form-input" type="text" name="tel" placeholder="Телефон">
-                        <input class="audit__form-input" type="text" name="tel" placeholder="Электронная почта">
-                        <input class="audit__form-input" type="text" name="tel" placeholder="Сайт компании">
+                        <div class="audit__form-input">
+                            <input class="input paudit__form-input-name" type="text" name="name" placeholder="Имя">
+                            <input class="input audit__form-input-tel" type="text" name="tel" placeholder="Телефон">
+                            <input class="input audit__form-input-mail" type="text" name="mail" placeholder="Электронная почта">
+                            <input class="input audit__form-input-site" type="text" name="site" placeholder="Сайт компании">
 
+                        </div>
                         <button class="btn audit__form-btn">Получить бесплатный аудит
                             <img class="btn-arrow" src="img/btn-arrow.svg" alt="arrow">
                         </button>
@@ -472,12 +662,13 @@
                     </div>
                 </form>
             </div>
+            <img class="audit-bg-small" src="img/audit.png" alt="bg">
             <img class="audit-bg" src="img/audit-bg.png" alt="bg">
         </section>
         <section class="prototype">
             <div class="container">
-                <h3 class="prototype-title-small">Не готовы сразу заказать полную разработку сайта?</h3>
-                <h1 class="prototype-title-big">Начните с разработки прототипа!</h1>
+                <h3 class="prototype-title-small">Не готовы сразу заказать <span class="blue-text">полную разработку</span> сайта?</h3>
+                <h1 class="prototype-title-big">Начните с разработки <span class="blue-text">прототипа!</span></h1>
                 <div class="prototype__text__items">
                     <div class="prototype__text__item">
                         <span class="prototype__text-line"></span>
@@ -507,6 +698,8 @@
                     </div>
                 </div>
             </div>
+            <img class="prototype-bgone" src="img/prototype1.png" alt="Nootbook">
+            <img class="prototype-bgtwo" src="img/protorype2.png" alt="bg">
         </section>
         <section class="clients">
             <div class="container">
@@ -515,7 +708,7 @@
                     <p class="clients__text-descr">Мы открыты к работе как с крупным бизнесом, так и со стартапами</p>
                 </div>
                 <div class="clients__items">
-                    <div class="clients__one">
+                    <div class="clients__one clients__group">
                         <div class="clients__item clients__item-megafon">
                             <img class="clients__item-img" src="img/megafon.png" alt="">
                         </div>
@@ -524,7 +717,7 @@
                             <img class="clients__item-img" src="img/zelenski.png" alt="">
                         </div>
                     </div>
-                    <div class="clients__two">
+                    <div class="clients__two clients__group">
                         <div class="clients__item clients__item-vektor">
                             <img class="clients__item-img" src="img/vektor.png" alt="">
                         </div>
@@ -532,12 +725,12 @@
                             <img class="clients__item-img" src="img/forpost.png" alt="">
                         </div>
                     </div>
-                    <div class="clients__three">
+                    <div class="clients__three clients__group">
                         <div class="clients__item clients__item-pfp">
                             <img class="clients__item-img" src="img/pfp.png" alt="">
                         </div>
-                    </div>
-                    <div class="clients__free-five">
+                    </div> 
+                    <div class="clients__free-five clients__group">
                         <div class="clients__free">
                             <div class="clients__item clients__item-zadel">
                                 <img class="clients__item-img" src="img/zadel.png" alt="">
@@ -554,11 +747,30 @@
                     </div>
 
 
+                    <!--
+                    <div class="clients__free-five clients__group">
+                        <div class="clients__free">
+                            <div class="clients__item clients__item-zadel">
+                                <img class="clients__item-img" src="img/zadel.png" alt="">
+                            </div>
+                            <div class="clients__item clients__item-promoil">
+                                <img class="clients__item-img" src="img/promoil.png" alt="">
+                            </div>
+                        </div>
+                        <div class="clients__five">
+                            <div class="clients__item clients__item-samokat">
+                                <img class="clients__item-img" src="img/samokat.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                -->
+
+
 
                 </div>
                 <form class="clients__form" action="" method="post">
                     <div class="clients__form-left">
-                        <span class="blue-text">Хотите стать одним из них?</span>
+                        <h3><span class="blue-text">Хотите стать одним из них?</span></h3>
                         <h3 class="clients__form-title">Оставьте заявку</h3>
                         <input class="clients__form-input" type="text" name="name" placeholder="Ваше имя">
                         <input class="clients__form-input" type="text" name="tel" placeholder="Ваш телефон">
@@ -669,6 +881,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery.marquee@1.6.0,npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
+    <script src="js/marquee.js"></script>
 </body>
-
 </html>
